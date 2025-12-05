@@ -1,84 +1,78 @@
-# analytics-project
-📊 Customer Behavior Analysis — Data Analytics Project
-📝 Overview
+# 📊 Customer Behavior Analysis — Data Analytics Project
 
-This project analyzes customer shopping behavior using Python, SQL, and Power BI.
-The goal is to uncover insights around customer demographics, spending patterns, category performance, and review behavior.
+## 📝 Overview
+This project analyzes customer shopping behavior using **Python**, **SQL**, and **Power BI**.  
+The goal is to uncover insights related to customer demographics, spending patterns, product category performance, and review behavior.
 
-The workflow demonstrates a complete end-to-end analytics pipeline:
+This project demonstrates a full **end-to-end analytics workflow**:
 
-Loading raw data in Python
+- Loading raw data in Python  
+- Running SQL queries directly inside Colab  
+- Performing Exploratory Data Analysis (EDA)  
+- Cleaning and transforming data  
+- Developing an interactive Power BI dashboard  
+- Communicating insights with a business-focused report  
 
-Running SQL queries directly in Colab
+It showcases real-world analytics skills across **Python, SQL, and Business Intelligence**.
 
-Performing EDA & cleaning
+---
 
-Preparing enriched datasets
-
-Designing a Power BI dashboard
-
-Delivering a clear business-focused report
-
-This project showcases real-world analytics skills across Python, SQL, and BI.
-
-📂 Dataset
+## 📂 Dataset
 
 Two datasets were used:
 
-File	Description
-customer_shopping_behavior.csv	Raw customer transaction data
-cleaned_customer_data.csv	Cleaned & transformed dataset
+| File | Description |
+|------|-------------|
+| `customer_shopping_behavior.csv` | Raw customer transaction data |
+| `cleaned_customer_data.csv` | Cleaned & transformed dataset |
 
-Key attributes include:
+**Key features include:**
 
-Age, gender, yearly salary
+- Age, Gender  
+- Category of Purchase  
+- Purchase Amount  
+- Review Ratings  
+- Shipping Type  
+- Subscription Status  
+- Yearly Salary  
 
-Category of purchase
+---
 
-Purchase amount
+## 🛠️ Tools & Technologies
 
-Review ratings
+| Tool | Purpose |
+|------|---------|
+| **Python (Pandas, NumPy, Matplotlib, Seaborn)** | Data loading, cleaning, analysis |
+| **SQL (via Google Colab)** | Querying, filtering, grouping, aggregations |
+| **Jupyter / Google Colab** | Notebook environment |
+| **Power BI Desktop** | Dashboard creation |
+| **GitHub** | Version control & hosting |
 
-Shipping type
+---
 
-Subscription status
+## 🔍 Steps Performed
 
-🛠️ Tools & Technologies
-Tool	Purpose
-Python (Pandas, NumPy, Matplotlib, Seaborn)	Data loading, cleaning, EDA
-SQL (via Google Colab)	Querying, filtering, aggregations, grouping
-Jupyter/Google Colab	Interactive workflow
-Power BI Desktop	Dashboard creation
-GitHub	Version control & hosting
-🔍 Steps Performed
-1️⃣ Data Loading
+### **1️⃣ Data Loading**
+- Imported the raw CSV into Python  
+- Inspected schema, datatypes, null values, and duplicates  
+- Verified integrity of customer & transaction fields  
 
-Imported raw CSV into Python
+---
 
-Inspected schema, datatypes, nulls, and duplicates
+### **2️⃣ SQL Queries in Colab**
+SQL queries were executed inside the Colab notebook using in-memory SQLite / IPython SQL magic.
 
-Verified integrity of customer & transaction fields
+**SQL tasks included:**
+- Selecting specific fields  
+- Filtering based on category, gender, subscription status  
+- Sorting by purchase amount and ratings  
+- Aggregating revenue & sales by category  
+- Grouping customers by age group  
+- Counting customers by shipping type  
 
-2️⃣ SQL Queries in Colab
+**Example SQL queries:**
 
-To simulate real database exploration, SQL queries were executed inside the Colab notebook using in-memory SQLite / IPython SQL magic.
-
-SQL tasks performed:
-
-Selecting key columns
-
-Filtering customers by category, gender, subscription
-
-Sorting by purchase amount and ratings
-
-Aggregating revenue & sales by category
-
-Grouping customers by age group
-
-Counting customers by shipping type
-
-Example SQL patterns used:
-
+sql
 SELECT category, SUM(purchase_amount) AS revenue
 FROM customer_data
 GROUP BY category
@@ -87,21 +81,18 @@ ORDER BY revenue DESC;
 SELECT gender, AVG(review_rating) AS avg_rating
 FROM customer_data
 GROUP BY gender;
-
-
-This SQL layer strengthens the analysis by combining database-style exploration with Python EDA.
-
+SQL provided a structured way to validate and explore the dataset before visualization.
 3️⃣ Exploratory Data Analysis (EDA) in Python
 
-Univariate and bivariate analysis
+Univariate & bivariate analysis
 
-Revenue patterns across categories
+Revenue trends by category
 
-Rating distributions
+Rating distribution & behavior
 
-Detecting skewness and outliers
+Outlier detection
 
-Creating new features (e.g., Age Groups)
+Feature engineering (e.g., Age Group classification)
 
 4️⃣ Data Cleaning
 
@@ -111,19 +102,19 @@ Removed duplicates
 
 Handled missing values
 
-Fixed inconsistent category labels
-
-Converted data types
-
 Standardized column names
 
-Exported cleaned dataset for Power BI
+Corrected inconsistent category labels
+
+Converted columns to proper datatypes
+
+Exported cleaned dataset for dashboarding
 
 5️⃣ Dashboard Development in Power BI
 
-Built a clean, interactive dashboard featuring:
+The dashboard includes:
 
-KPIs:
+KPIs
 
 Total Customers
 
@@ -131,7 +122,7 @@ Average Purchase Amount
 
 Average Rating
 
-Slicers for:
+Filters (Slicers)
 
 Gender
 
@@ -141,52 +132,48 @@ Shipping Type
 
 Subscription Status
 
-Charts:
+Visuals
 
 Revenue by Category
 
 Sales by Category
 
-Customer Distribution by Subscription
+% of Customers by Subscription Status
 
 Revenue by Age Group
 
 Sales by Age Group
-
-📈 Dashboard Preview
-
-(Replace with your actual screenshot in images/)
-
 ⭐ Key Insights & Results
 
-Clothing drives the highest revenue and sales
+Clothing is the highest-performing category in both revenue and sales
 
 73% of customers are non-subscribers
 
-Young Adults & Middle-aged groups contribute most of the revenue
+Young Adults and Middle-aged groups contribute the largest share of revenue
 
-Average purchase amount ≈ $59.76
+Average purchase amount is $59.76
 
-Average customer rating = 3.75
+Average customer rating is 3.75
 
-Accessories category is the second strongest performer
+Accessories rank second-highest in revenue
 
-These insights can support improvements in:
+These insights support:
 
-Marketing segmentation
+Better marketing segmentation
 
-Category-level inventory planning
+Inventory planning
 
-Pricing & promotions
+Pricing and discount strategy
 
-Subscription program strategies
+Subscription program improvements
 
 ▶️ How to Run This Project
 1. Run Python + SQL Notebook
 
-Open notebook/code.ipynb
+Open the notebook:
+notebook/code.ipynb
 
-Install required libraries:
+Install required Python libraries:
 
 pip install pandas numpy matplotlib seaborn sqlalchemy
 
@@ -199,17 +186,17 @@ EDA
 
 Cleaning
 
-Exporting the cleaned dataset
+Exporting cleaned dataset
 
-2. Open Power BI Dashboard
+2. Open the Power BI Dashboard
 
-Download dashboard/Customer_behaviour_Dashboard.pbix
+Download:
+dashboard/Customer_behaviour_Dashboard.pbix
 
 Open in Power BI Desktop
 
-If prompted, relink the cleaned dataset (cleaned_customer_data.csv)
+If prompted, reconnect the cleaned dataset (cleaned_customer_data.csv)
 
-📦 Project Structure
 project/
  ├── data/
  │     ├── raw/
@@ -223,8 +210,6 @@ project/
  ├── images/
  │     └── dashboard.png (optional)
  └── README.md
+ Feel free to reach out if you'd like feedback or want to collaborate on analytics projects.
 
-📬 Contact
-
-Feel free to connect if you'd like feedback or collaboration on analytics projects.
 
