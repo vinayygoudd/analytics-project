@@ -152,4 +152,74 @@ Customer Distribution by Subscription
 Revenue by Age Group
 
 Sales by Age Group
+Key Insights & Results
+
+Clothing drives the highest revenue and sales
+
+73% of customers are non-subscribers
+
+Young Adults & Middle-aged groups contribute most of the revenue
+
+Average purchase amount ≈ $59.76
+
+Average customer rating = 3.75
+
+Accessories category is the second strongest performer
+
+These insights can support improvements in:
+
+Marketing segmentation
+
+Category-level inventory planning
+
+Pricing & promotions
+
+Subscription program strategies
+
+▶️ How to Run This Project
+1. Run Python + SQL Notebook
+
+Open notebook/code.ipynb
+
+Install required libraries:
+
+pip install pandas numpy matplotlib seaborn sqlalchemy
+
+
+Run all cells to reproduce:
+
+SQL queries
+
+EDA
+
+Cleaning
+
+Exporting the cleaned dataset
+
+2. Open Power BI Dashboard
+
+Download dashboard/Customer_behaviour_Dashboard.pbix
+
+Open in Power BI Desktop
+
+If prompted, relink the cleaned dataset (cleaned_customer_data.csv)
+
+📦 Project Structure
+project/
+ ├── data/
+ │     ├── raw/
+ │     │     └── customer_shopping_behavior.csv
+ │     └── cleaned/
+ │           └── cleaned_customer_data.csv
+ ├── notebook/
+ │     └── code.ipynb
+ ├── dashboard/
+ │     └── Customer_behaviour_Dashboard.pbix
+ ├── images/
+ │     └── dashboard.png 
+ └── README.md
+
+📬 Contact
+
+Feel free to connect if you'd like feedback or collaboration on analytics projects.
 
