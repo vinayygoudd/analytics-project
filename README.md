@@ -82,119 +82,74 @@ SELECT gender, AVG(review_rating) AS avg_rating
 FROM customer_data
 GROUP BY gender;
 SQL provided a structured way to validate and explore the dataset before visualization.
+
+
 3️⃣ Exploratory Data Analysis (EDA) in Python
-
 Univariate & bivariate analysis
-
 Revenue trends by category
-
 Rating distribution & behavior
-
 Outlier detection
-
 Feature engineering (e.g., Age Group classification)
 
 4️⃣ Data Cleaning
-
 Performed in Python:
-
 Removed duplicates
-
 Handled missing values
-
 Standardized column names
-
 Corrected inconsistent category labels
-
 Converted columns to proper datatypes
-
 Exported cleaned dataset for dashboarding
 
 5️⃣ Dashboard Development in Power BI
-
 The dashboard includes:
-
 KPIs
-
 Total Customers
-
 Average Purchase Amount
-
 Average Rating
-
 Filters (Slicers)
-
 Gender
-
 Category
-
 Shipping Type
-
 Subscription Status
-
 Visuals
-
 Revenue by Category
-
 Sales by Category
-
 % of Customers by Subscription Status
-
 Revenue by Age Group
-
 Sales by Age Group
+
 ⭐ Key Insights & Results
 
 Clothing is the highest-performing category in both revenue and sales
-
 73% of customers are non-subscribers
-
 Young Adults and Middle-aged groups contribute the largest share of revenue
-
 Average purchase amount is $59.76
-
 Average customer rating is 3.75
-
 Accessories rank second-highest in revenue
-
 These insights support:
-
 Better marketing segmentation
-
 Inventory planning
-
 Pricing and discount strategy
-
 Subscription program improvements
 
 ▶️ How to Run This Project
 1. Run Python + SQL Notebook
-
 Open the notebook:
 notebook/code.ipynb
-
 Install required Python libraries:
-
 pip install pandas numpy matplotlib seaborn sqlalchemy
 
-
 Run all cells to reproduce:
-
 SQL queries
-
 EDA
-
 Cleaning
-
 Exporting cleaned dataset
 
 2. Open the Power BI Dashboard
 
 Download:
 dashboard/Customer_behaviour_Dashboard.pbix
-
 Open in Power BI Desktop
-
 If prompted, reconnect the cleaned dataset (cleaned_customer_data.csv)
 
 project/
@@ -210,6 +165,7 @@ project/
  ├── images/
  │     └── dashboard.png (optional)
  └── README.md
+ 
  Feel free to reach out if you'd like feedback or want to collaborate on analytics projects.
 
 
