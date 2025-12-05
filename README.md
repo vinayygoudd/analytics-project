@@ -1,6 +1,6 @@
 # analytics-project
 📊 Customer Behavior Analysis — Data Analytics Project
- Overview
+📝 Overview
 
 This project analyzes customer shopping behavior using Python, SQL, and Power BI.
 The goal is to uncover insights around customer demographics, spending patterns, category performance, and review behavior.
@@ -21,7 +21,7 @@ Delivering a clear business-focused report
 
 This project showcases real-world analytics skills across Python, SQL, and BI.
 
- Dataset
+📂 Dataset
 
 Two datasets were used:
 
@@ -51,7 +51,7 @@ Jupyter/Google Colab	Interactive workflow
 Power BI Desktop	Dashboard creation
 GitHub	Version control & hosting
 🔍 Steps Performed
-1️. Data Loading
+1️⃣ Data Loading
 
 Imported raw CSV into Python
 
@@ -59,7 +59,7 @@ Inspected schema, datatypes, nulls, and duplicates
 
 Verified integrity of customer & transaction fields
 
-2️. SQL Queries in Colab
+2️⃣ SQL Queries in Colab
 
 To simulate real database exploration, SQL queries were executed inside the Colab notebook using in-memory SQLite / IPython SQL magic.
 
@@ -91,7 +91,7 @@ GROUP BY gender;
 
 This SQL layer strengthens the analysis by combining database-style exploration with Python EDA.
 
-3️. Exploratory Data Analysis (EDA) in Python
+3️⃣ Exploratory Data Analysis (EDA) in Python
 
 Univariate and bivariate analysis
 
@@ -103,7 +103,7 @@ Detecting skewness and outliers
 
 Creating new features (e.g., Age Groups)
 
-4️. Data Cleaning
+4️⃣ Data Cleaning
 
 Performed in Python:
 
@@ -119,7 +119,7 @@ Standardized column names
 
 Exported cleaned dataset for Power BI
 
-5️. Dashboard Development in Power BI
+5️⃣ Dashboard Development in Power BI
 
 Built a clean, interactive dashboard featuring:
 
@@ -152,7 +152,12 @@ Customer Distribution by Subscription
 Revenue by Age Group
 
 Sales by Age Group
-Key Insights & Results
+
+📈 Dashboard Preview
+
+(Replace with your actual screenshot in images/)
+
+⭐ Key Insights & Results
 
 Clothing drives the highest revenue and sales
 
@@ -216,7 +221,7 @@ project/
  ├── dashboard/
  │     └── Customer_behaviour_Dashboard.pbix
  ├── images/
- │     └── dashboard.png 
+ │     └── dashboard.png (optional)
  └── README.md
 
 📬 Contact
